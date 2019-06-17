@@ -14,5 +14,11 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let num = document.getElementById("number").value;
+        let facto = 1;
+        for (let i = 1; i <= num; i++) {
+            facto = facto * i;
+            alert(`La factorielle de ${num} :\n${facto}`);
+        }
     });
 })();

@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+
+    let col1  = document.getElementById("red");
+    let col2  = document.getElementById("green");
+    let col3  = document.getElementById("yellow");
+    let col4  = document.getElementById("blue");
+
+    col1.addEventListener("click", () => document.body.style.backgroundColor = "red");
+    col2.addEventListener("click", () => document.body.style.backgroundColor = "green");
+    col3.addEventListener("click", () => document.body.style.backgroundColor = "yellow");
+    col4.addEventListener("click", () => document.body.style.backgroundColor = "blue");
 })();

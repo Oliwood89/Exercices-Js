@@ -14,5 +14,10 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let sorting = document.getElementById("numbers").value;
+        let array = sorting.split(",");
+        
+        array.sort((a, b) => a - b);
+        alert(`Tableau trié : ${array}`);
     });
 })();

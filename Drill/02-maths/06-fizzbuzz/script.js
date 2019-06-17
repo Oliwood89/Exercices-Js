@@ -12,5 +12,16 @@
 (()=> {
 
     // your code here
-
+        for (i=0 ; i <= 100 ; i++) {
+            if ( 0 == i % 3 && 0 == i % 5) {
+                console.log(`${i} fizzbuzz`);
+            }
+            else if (0 == i % 3) {
+                console.log(`${i} fizz`);
+            }
+            else if (0 == i % 5) {
+                console.log(`${i} buzz`);
+            }
+            else console.log(`${i}`);
+        }
 })();
