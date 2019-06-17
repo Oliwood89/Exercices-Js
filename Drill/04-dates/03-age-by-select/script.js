@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const run = document.getElementById('run');
+    run.addEventListener('click', () => {
+        let day = document.getElementById('dob-day').value;
+        let month = document.getElementById('dob-month').value;
+        let year = document.getElementById('dob-year').value;
+        let date = new Date();
+        let PresentYear = date.getFullYear();
+        let PresentMonth = date.getMonth() + 1;
+        let PresentDay = date.getDate();
+        let age = 0;
+        age = PresentYear - year;
+        if (PresentMonth >= month) {
+            if (PresentDay > day) {
+                age--;
+            }
+        }
+        console.log(`${age} ans`);
+    })
 })();

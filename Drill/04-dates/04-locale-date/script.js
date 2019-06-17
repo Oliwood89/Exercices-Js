@@ -12,4 +12,28 @@
 (() => {
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
     // your code here
+
+    let doc = document.querySelector("target")
+
+    let days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
+    let months = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"];
+    let date = new Date();
+
+
+    function heure() {
+        let date = new Date();
+        let hour = date.getHours();
+        let minutes = date.getMinutes();
+        if (minutes < 10)
+            minutes = "0" + minutes;
+        return hour + "h" + minutes;
+    }
+
+    let message = days[date.getDay()] + " "; // nom du jour
+    message += date.getDate() + " "; // numero du jour
+    message += months[date.getMonth()] + " "; // mois
+    message += date.getFullYear(); + " ";
+
+
+    target.innerHTML = message + " " + heure();
 })();
