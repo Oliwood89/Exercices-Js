@@ -16,4 +16,28 @@
         }
     }
     // your code here
+
+    class Cat extends Animal {
+        constructor(name) {
+            super();
+            this.name = name;
+        }
+        static greeting() {'Hello !'}
+    }
+
+    class Dog extends Animal {
+        constructor(name) {
+            super();
+            this.name = name;
+        }
+        static greeting() {'Hello !'}
+    }
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function (){
+        let chat = new Cat('Poupouss');
+        let chien= new Dog('Rex');
+        console.log(chat.sayHello());
+        console.log(chien.sayHello());
+    })
 })();

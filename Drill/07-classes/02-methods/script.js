@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+
+    let pouic = document.getElementById('run');
+        pouic.addEventListener('click', function () {
+
+        class Person {
+            constructor (firstname, lastname) {
+                this.firstname = firstname;
+                this.lastname = lastname;
+            }
+        
+
+        sayHello () {
+            console.log("Hello, " + this.firstname + " " + this.lastname + "!");
+        }
+    }
+
+        let Someone = new Person ("Jean-Mi", "De La Rochelle");
+        console.log(Someone.sayHello());
+    })
 })();

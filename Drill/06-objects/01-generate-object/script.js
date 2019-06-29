@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function () {
+
+        let Me = {
+            firstname: 'Oli',
+            lastname: 'Loriaux',
+            age: 29,
+            city: 'Lodelinsart',
+            country: 'Belgium'
+        }
+        console.log(Me);
+    })
 })();

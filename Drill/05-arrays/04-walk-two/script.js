@@ -26,4 +26,13 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById('run');
+
+    pouic.addEventListener('click', function () {
+
+        fruits.forEach(element => {
+            console.log(element)
+        });
+    })
 })();

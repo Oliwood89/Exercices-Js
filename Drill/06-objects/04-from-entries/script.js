@@ -13,4 +13,10 @@
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     // your code here
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function () {
+
+        
+    })
 })();

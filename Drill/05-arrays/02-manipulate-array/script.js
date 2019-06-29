@@ -24,4 +24,18 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById("run");
+
+    pouic.addEventListener("click", function () {
+
+        console.log(fruits);
+
+        fruits.shift("pomme");
+        fruits.pop("cerise");
+        fruits.unshift("banane");
+        fruits.push("kiwi");
+
+        console.log(fruits);
+    })
 })();

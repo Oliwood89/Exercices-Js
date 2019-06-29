@@ -89,4 +89,16 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById('run');
+
+    pouic.addEventListener('click', function () {
+
+        people.forEach(element => {
+            if ((element.lastname === "Dupont") && (element.firstname === "Jean")) {
+                console.log(element.email);
+                console.log(people.indexOf(element));
+            }
+        });
+    })
 })();

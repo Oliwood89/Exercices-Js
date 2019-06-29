@@ -26,4 +26,14 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById("run");
+
+    pouic.addEventListener('click', function () {
+
+        for(let i=0; i<fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+    })
 })();

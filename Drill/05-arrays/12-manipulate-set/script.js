@@ -24,4 +24,15 @@
     ]);
 
     // your code here
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function () {
+
+        fruits.delete("pomme");
+        fruits.delete("cerise");
+        fruits.add("banane");
+        fruits.add("kiwi");
+
+        console.log(fruits);
+    })
 })();

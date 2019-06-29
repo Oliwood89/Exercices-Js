@@ -26,4 +26,18 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById('run');
+
+    pouic.addEventListener('click', function () {
+
+        if (fruits.includes("pomme")) {
+
+            console.log("Oui, il y a bien une pomme.");
+        }
+
+        else {
+            console.log("Non, il n'y a pas de pomme.")
+        }
+    })
 })();

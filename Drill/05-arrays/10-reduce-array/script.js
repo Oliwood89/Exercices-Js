@@ -89,4 +89,12 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById('run');
+
+    addEventListener('click', function () {
+
+        let TotAge = people.reduce((a,b) => b.age + a, 0);
+        this.console.log(TotAge);
+    })
 })();

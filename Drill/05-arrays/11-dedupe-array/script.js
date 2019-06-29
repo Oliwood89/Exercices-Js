@@ -28,4 +28,12 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById('run');
+
+    pouic.addEventListener('click', function () {
+
+        let NewTab = new Set(fruits);
+        console.log(NewTab);
+    })
 })();

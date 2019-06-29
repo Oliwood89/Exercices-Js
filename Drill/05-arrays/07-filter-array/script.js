@@ -89,4 +89,16 @@
     ];
 
     // your code here
+
+    let pouic = document.getElementById('run');
+
+    pouic.addEventListener('click', function () {
+
+        let newtab = people.map(function (element){
+            if (element.age > 18) {
+                return element;
+            }
+        })
+        console.log(newtab);
+    })
 })();

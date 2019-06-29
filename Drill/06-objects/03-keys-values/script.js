@@ -19,4 +19,11 @@
         status: "married",
     };
     // your code here
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function () {
+
+        console.log(Object.keys(person));
+        console.log(Object.values(person));
+    })
 })();

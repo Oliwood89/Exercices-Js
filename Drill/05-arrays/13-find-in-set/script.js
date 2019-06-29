@@ -23,4 +23,11 @@
     ]);
 
     // your code here
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function () {
+
+        console.log(people.size);
+        console.log(people.has('Alexandre'));
+    })
 })();
