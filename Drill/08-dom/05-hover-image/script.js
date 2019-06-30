@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+
+    let img1 = document.querySelector('img');
+    let imgsrc = img1.getAttribute('src');
+    let img2 = img1.getAttribute('data-hover');
+
+    img1.addEventListener('mouseover', function () {
+
+        img1.src = img2;
+    })
+
+    img1.addEventListener('mouseout', function () {
+
+        img1.src = imgsrc;
+    })
 })();

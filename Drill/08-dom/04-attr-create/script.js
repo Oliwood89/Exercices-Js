@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+
+    let recupimg = document.getElementById('source').getAttribute('data-image');
+    let NewTag = document.getElementById('target').createElement('img');
+    
+    let rmw = document.getElementById('source').remove();
 })();
