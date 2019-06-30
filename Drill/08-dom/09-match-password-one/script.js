@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+
+    let passone = document.getElementById('pass-one');
+    let passtwo = document.getElementById('pass-two');
+
+    let pouic = document.getElementById('run');
+    pouic.addEventListener('click', function () {
+
+        if (passone.value === passtwo.value) {
+            alert("Les deux mots de passe sont identiques");
+        }
+        else {
+            passone.style.border = "solid red";
+            passtwo.style.border = "solid red";
+        }
+    })
 })();

@@ -20,5 +20,9 @@
 
     // your code here
 
-    
+    let pouic = document.getElementById('next');
+    pouic.addEventListener('click', function () {
+
+        
+    })
 })();

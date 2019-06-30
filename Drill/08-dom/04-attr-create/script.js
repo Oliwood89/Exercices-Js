@@ -13,7 +13,8 @@
     // your code here
 
     let recupimg = document.getElementById('source').getAttribute('data-image');
-    let NewTag = document.getElementById('target').createElement('img');
-    
+    let NewImg = document.createElement('img');
+    document.getElementById('target').append(NewImg)
+    NewImg.setAttribute('src', recupimg);
     let rmw = document.getElementById('source').remove();
 })();

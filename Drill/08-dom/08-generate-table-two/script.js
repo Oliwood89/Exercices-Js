@@ -11,4 +11,21 @@
 
 (() => {
     // your code here
+
+    let target = document.getElementById('target');
+    let tableau = document.createElement('table');
+    
+    for (a = 1; a <= 10; a++) {
+        let tr = document.createElement('tr');
+
+        for (b = 1; b <= 10; b++) {
+            let td = document.createElement('td');
+
+            td.innerHTML = a * b ;
+
+            target.append(tableau);
+        tableau.append(tr);
+        tr.append(td);
+        }
+    }
 })();

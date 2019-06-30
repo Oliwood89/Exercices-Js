@@ -10,5 +10,29 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('pass-one').addEventListener('input', () => {
+        let champ = document.getElementById('pass-one').value
+        let total = champ.length;
+        let valid = document.getElementById('validity');
+
+        if (total >= 8) {
+            let nombre = 0;
+            for (i = 0; i < total; i++) {
+                if (!isNaN(champ[i])) {
+                    nombre++
+                }
+            }
+            if (nombre >= 2) {
+                if (total >= 8) {
+                    valid.innerText = 'ok';
+                } else {
+                    valid.innerText = 'Pas ok';
+                }
+            } else {
+                valid.innerText = 'Pas ok';
+            }
+        } else {
+            valid.innerText = 'Pas ok';
+        }
+    })
 })();

@@ -17,6 +17,14 @@
     let pouic = document.getElementById('run');
     pouic.addEventListener('click', function () {
 
-        
+        let objs = [];
+        for(let i=0; i < keys.length; i++) {
+            let prop = [];
+            prop.push(keys[i]);
+            prop.push(values[i]);
+            objs.push(prop);
+        }
+        let finalobj = Object.fromEntries(objs);
+        console.log(finalobj);
     })
 })();

@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+
+    let target = document.getElementById('target');
+    let tableau = document.createElement('table');
+    
+    for (i = 0; i <= 9; i++) {
+
+        let td = document.createElement("td");
+        let tr = document.createElement("tr");
+        target.append(tableau);
+        tableau.append(tr);
+        tr.append(td);
+    }
 })();

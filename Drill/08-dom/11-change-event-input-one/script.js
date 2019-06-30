@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+
+    let champ = document.getElementById('pass-one')
+    let chiffres = document.getElementById('counter')
+    
+    let pouic = document.getElementById('pass-one')
+    pouic.addEventListener('input', function () {
+        for (i = 0; i < 10; i++) {
+            chiffres.innerHTML = champ.value.length+"/10";
+        }
+        if (champ.value.length > 9) {
+            champ.disabled = true;
+        }
+    })
 })();
